@@ -1,0 +1,396 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+}
+/*DEBUT NAVBAR*/
+#navbar{
+   background: #f9f9f9;
+}
+#logo{
+    font-size: 36px;
+    font-weight: 700;
+    color: black;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+}
+#logo span{
+    color: #ffa500;
+}
+.navbar-toggler span{
+    color: #ffa500;
+}
+.nav-item .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 1px;
+    border-radius: 3px;
+    transition: 0.5s ease;
+    text-transform: capitalize;
+}
+.nav-item .nav-link:hover{
+    background: #ffa500;
+    color: white;
+}
+#navbar form button{
+    background: #ffa500;
+    color: white;
+    border: none;
+}
+/*FIN NAVBAR*/
+
+
+/*DEBUT SECTION ACCEUIL*/
+.home{
+    width:100%;
+    height: 75vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./images/background\ img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: white;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 70px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-top: 5px;
+}
+.changecontent::after{
+    content: ' ';
+    color: #ffa500;
+    text-shadow: 0px 1px 1px black;
+    animation: changetxt 10s infinite linear;
+}
+@keyframes changetxt{
+    0%{content: "France";}
+    10%{content: "Espagne";}
+    20%{content: "Etat Unis";}
+    30%{content: "Chine";}
+    40%{content: "Portugal";}
+    50%{content: "Russie";}
+    60%{content: "Italie";}
+    70%{content: "Turquie";}
+    80%{content: "Canada";}
+    90%{content: "Egypte";}
+    100%{content: "Bresil";}
+   
+}
+.home .content p{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 30px;
+    margin-top: 5px;
+}
+.home .content a{
+    padding:10px;
+    background:white ;
+    text-decoration:none;
+    color:black;
+    border-radius:5px;
+    letter-spacing: 2px;
+    transition:0.5s;
+    font-weight:550px;
+}
+.home .content a:hover{
+    color: white;
+    background: #ffa500;
+}
+@media (max-width:850px){
+   .home{
+      background-position:50%;
+    }
+}
+@media (max-width:450px){
+    .home .content h5{
+       font-size: 25px;
+    }
+    .home .content h1{
+        font-size: 35px;
+    }
+    .home .content h1{
+        font-size: 13px;
+    }
+ 
+
+}
+/*FIN SECTION ACCEUIL*/
+
+
+/*DEBUT SECTION RESERVER*/
+.reserver{
+    background: #f9f9f9;
+    padding: 50px;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow:  0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: #ffa500;
+}
+.reserver .row{
+    margin-top: 30px;
+}
+.reserver .ville{
+    margin-left: 5px;
+    margin-bottom: 3px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+.reserver #ville{
+    border: none;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+.reserver .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.reserver form input{
+    padding: 10px;
+    color: black;
+    outline: none;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.reserver form textarea{
+    border-radius: 10px;
+    border: none;
+    resize: none;
+    box-shadow: 0px 5px 5px -6px black;
+    height: 200px;
+    margin-top: 5px;
+}
+.reserver .submit{
+    background: #ffa500;
+    width: 170px;
+    color: white;
+    margin-top: 10px;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.5s;
+}
+.reserver .submit:hover{
+   width: 180px;
+}
+/*FIN SECTION RESERVER*/
+
+/*DEBUT SECTION PACKAGES*/
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow:  0px 1px 1px black;
+}
+.main-txt h1 span{
+    color: #ffa500;
+}
+.star i{
+    color: #ffa500;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.packages .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+    padding-bottom: 5px;
+
+}
+.packages .card:hover{
+    transform: scale(1.05);
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card h5{
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+}
+.packages .card p{
+    font-size: 18px;
+}
+.packages .card h6{
+    margin-bottom: 15px;
+}
+.packages .card a{
+    background: #ffa500;
+    width: 170px;
+    color:white;
+    padding: 10px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 5px;
+}
+/*FIN PACKAGES*/
+
+
+/*DEBUT SERVICES*/
+.services{
+    background: #f9f9f9;
+    padding-top: 10px;
+}
+.services .main-text h1{
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow:  0px 1px 0px black;
+}
+.services .card .card-body h5{
+    text-align: center;
+    font-size: 55px;
+    color: #ffa500;
+    padding-bottom: 5px;
+}
+.services .card .card-body h3{
+    text-align: center;
+    font-size: 23px;
+    font-weight: 700;
+    text-shadow:  0px 1px 0px black;
+    padding-bottom: 5px;
+}
+.services .card .card-body p{
+    text-align: center;
+}
+.services .card{
+    box-shadow: 0px 5px 5px -6px black;
+    padding: 35px;
+    border-radius: 10px;
+}
+
+
+/*FIN SERVICES*/
+
+/*DEBUT SECTION GALERIE*/
+
+.galerie .main-text{
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.galerie .card img:hover{
+    transform: scale(1.07);
+}
+
+
+
+/*FIN SECTION GALERIE*/
+
+/*DEBUT SECTION A-PROPOS*/
+.a-propos{
+    background: #f9f9f9;
+}
+.a-propos .main-text{
+    margin-top: 30px;
+}
+.a-propos .card { 
+    border-radius: 10px;
+}
+
+.a-propos .card img{ 
+    border-radius: 10px;
+}
+.a-propos h2{
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+.a-propos p{
+    font-weight: 500;
+}
+.a-propos .a-propos-btn{
+    width: 160px;
+    height: 38px;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+    background: #ffa500;
+    padding: 10px;
+    text-decoration: none;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.5s ease;
+}
+
+.a-propos-btn:hover{
+    width: 170px;
+}
+
+/*FIN SECTION A-PROPOS*/
+
+/*DEBUT SECTION FOOTER*/
+
+.footer{
+    text-align: center;
+    width: 100%;
+}
+.footer h1{
+    font-size: 35px;
+    font-weight: 600;
+}
+.footer p{
+    font-size: 20px;
+}
+.footer .social-media{
+    margin-bottom: 20px;
+}
+.footer .social-media i{
+    font-size:35px;
+    letter-spacing: 2px;
+    color: white;
+    padding: 10px 10px;
+    border: none;
+    background: black;
+    border-radius: 10px;
+    transition: 0.5s ease;
+}
+.footer .social-media i:hover{
+    transform: scale(1.1);
+    background: #ffa500;
+    color: black;
+}
+.footer .dedicace .blaz{
+    text-decoration: none;
+    color: #ffa500;
+    font-size: 25px;
+}
+
+.footer .en-tete{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .en-tete i{
+    font-size: 30px;
+    left: 0;
+    right: -180px;
+    position: absolute;
+    color: #ffa500;
+    
+}
